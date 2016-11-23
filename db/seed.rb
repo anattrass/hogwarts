@@ -3,22 +3,22 @@ require_relative('../models/house.rb')
 
 house1 = House.new({
     'name' => 'Gryffindor',
-    'logo_url' => '',
+    'logo_url' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Gryffindorcolours.svg/64px-Gryffindorcolours.svg.png',
     })
 
 house2 = House.new({
     'name' => 'Hufflepuff',
-    'logo_url' => '',
+    'logo_url' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Hufflepuff_colours.svg/64px-Hufflepuff_colours.svg.png',
     })
 
 house3 = House.new({
     'name' => 'Ravenclaw',
-    'logo_url' => '',
+    'logo_url' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Ravenclawcolours.svg/64px-Ravenclawcolours.svg.png',
     })
 
 house4 = House.new({
     'name' => 'Slytherin',
-    'logo_url' => '',
+    'logo_url' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Slytherin_colours.svg/64px-Slytherin_colours.svg.png',
     })
 
 house1.save()

@@ -48,6 +48,14 @@ class Student
         return result
     end
 
+    def self.find_by_house( house_id )
+        sql = "SELECT * FROM students
+        WHERE house_id = #{house_id};"
+        students = SqlRunner.run(sql)
+        result = students.map { |student| Student.new ( student) }
+        return result
+    end
+
 
 
 

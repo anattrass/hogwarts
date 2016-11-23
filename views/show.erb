@@ -1,0 +1,13 @@
+<h1>Show a student</h1>
+
+<p>First name: <%= @student.first_name %></p>
+<p>Last name: <%= @student.last_name %></p>
+<p>Age: <%= @student.age %></p>
+<p>House: <%= @student.house.name %> <img src="<%= @student.house.logo_url %>"></p>
+
+
+<p><a href="/pizzas/<%= @student.id %>/edit">Edit</a></p>
+
+<form action="/pizzas/<%= @student.id %>/delete" method="post">
+    <input type="submit" value="delete" />
+</form>

@@ -1,0 +1,10 @@
+<h1>House <%= @house.name %></h1>
+
+<img src="<%= @house.logo_url%>">
+
+<% for student in @students %>
+    <p>Name: <%= student.pretty_name() %> </p>
+    <p>House: <%= student.house.name %> </p>
+    <p>Age: <%= student.age %></p>
+    <hr>
+<% end %>
