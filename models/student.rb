@@ -32,6 +32,13 @@ class Student
         return result
     end
 
+    def self.find_by_id( id )
+        sql = "SELECT * FROM students WHERE id=#{id}"
+        student = SqlRunner.run(sql)
+        result = Student.new( student.first )
+        return result
+    end
+
 
 
 
