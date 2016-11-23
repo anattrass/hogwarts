@@ -1,0 +1,28 @@
+require_relative('../db/sqlrunner')
+
+class Student
+    attr_reader :first_name, :last_name, :house, :age, :id
+
+    def initialize( options )
+        @first_name = options['first_name']
+        @last_name = options['last_name']
+        @house = options['house']
+        @age= options['age'].to_i
+        @id = options['id'].to_i if options['id']
+    end
+    
+    def save()
+        sql = "
+        INSERT INTO students
+        (first_name, last_name, house, age)
+        values
+        ('#{@first_name}', '#{@last_name}', '#{@house}', #{@age})
+        returning *
+        ;"
+
+        result = SqlRunner.run(sql)
+
+        @id = result[0]['id'].to_i
+    end
+    
+end
