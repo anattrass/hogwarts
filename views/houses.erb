@@ -2,6 +2,7 @@
 
 <% for house in @houses %>
     <p>Name: <%= house.name() %> </p>
+    <p>Head of house: <%= house.head %> </p>
     <a href="/students/house/<%= house.id %>">Show students</a>
     <hr>
 <% end %>

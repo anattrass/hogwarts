@@ -5,6 +5,7 @@ DROP TABLE houses;
 CREATE TABLE houses (
     id SERIAL8 primary key,
     name VARCHAR(255),
+    head VARCHAR(255),
     logo_url VARCHAR(255)
 );
 
