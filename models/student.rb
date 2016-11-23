@@ -11,6 +11,10 @@ class Student
         @id = options['id'].to_i if options['id']
     end
     
+    def pretty_name()
+        return @first_name + " " + @last_name
+    end
+
     def save()
         sql = "
         INSERT INTO students
@@ -38,6 +42,8 @@ class Student
         result = Student.new( student.first )
         return result
     end
+
+
 
 
 
