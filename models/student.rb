@@ -6,7 +6,7 @@ class Student
     def initialize( options )
         @first_name = options['first_name']
         @last_name = options['last_name']
-        @house = options['house']
+        @house = options['house'].to_i
         @age= options['age'].to_i
         @id = options['id'].to_i if options['id']
     end
@@ -20,7 +20,7 @@ class Student
         INSERT INTO students
         (first_name, last_name, house, age)
         values
-        ('#{@first_name}', '#{@last_name}', '#{@house}', #{@age})
+        ('#{@first_name}', '#{@last_name}', #{@house}, #{@age})
         returning *
         ;"
 
