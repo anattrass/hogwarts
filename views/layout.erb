@@ -8,16 +8,21 @@
 <nav>
     <ul>
         <li>
-            <a href="/students">All students</a>
+            <a href="/students/new">Enroll student</a>
         </li>
         <li>
-            <a href="/students/new">Enroll student</a>
+            <a href="/students">All students</a>
         </li>
         <li>
             <a href="/houses">All Houses</a>
         </li>
     </ul>
 </nav>
-  <%= yield %>
+    <div class="container">
+      <div class = "content">
+        <%= yield %>
+      </div>
+    <img src = "https://67.media.tumblr.com/f607af5bc60d1b2837add83c70a2aa45/tumblr_inline_mrwv19q8fE1qz4rgp.gif" id="logo" height=500>
+    </div>
 </body>
 </html>

@@ -2,22 +2,22 @@
 
 <form action="/students" method = "post">
     <label>
-        First name:
+        <span>First name:</span>
         <input type="text" name="first_name"/>
     </label>
 
     <label>
-        Last name:
+        <span>Last name:</span>
         <input type="text" name="last_name"/>
     </label>
 
     <label>
-        Age:
+        <span>Age:</span>
         <input type="number" name="age"/>
     </label>
 
     <label>
-        House:
+        <span>House:</span>
         <select name="house_id">
            <% for house in @houses %>
            <option value="<%= house.id %>">
@@ -30,3 +30,6 @@
 
     <input type="submit" value="Enroll">
 </form>
+
+<div class="empty">
+</div>

@@ -1,6 +1,47 @@
 body{
-    background-image: url(https://67.media.tumblr.com/f607af5bc60d1b2837add83c70a2aa45/tumblr_inline_mrwv19q8fE1qz4rgp.gif);
+    background-image: url(http://vignette1.wikia.nocookie.net/jspotter/images/3/39/Hogwarts_1.png/revision/latest?cb=20140719065253);
     background-position: right;
     background-repeat: no-repeat;
+
+    background-color: #FFEBCD;
+    color: #663399;
+
+    font-family: "Lucida Grande";
     
+}
+
+form label {
+    display: block;
+}
+
+form label span {
+    display: inline-block;
+    width: 20%;
+}
+
+form label input {
+    width: 40%;
+}
+
+nav ul {
+    list-style-type: none; 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 60%;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+.content {
+    display: inline-block;
+    width: 60%;
+    height: auto;
+}
+
+#logo {
+    display: inline;
 }
